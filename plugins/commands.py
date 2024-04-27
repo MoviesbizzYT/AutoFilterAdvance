@@ -132,7 +132,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ")] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🎥 NEW MOVIES CHANNEL 🎥", url="https://t.me/MoviEsBizzMalaYalaM_HD")] ] ),
                     
                     protect_content=msg.get('protect', False),
                     )
@@ -229,7 +229,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         
-        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ")] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🎥 NEW MOVIES CHANNEL 🎥", url="https://t.me/MoviEsBizzMalaYalaM_HD")] ] ),
         
         protect_content=True if pre == 'filep' else False,
         )
