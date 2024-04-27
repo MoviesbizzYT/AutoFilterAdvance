@@ -665,17 +665,6 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-    btn.insert(0,
-        [
-            InlineKeyboardButton("Update Channel", url="https://t.me/VJ_Botz"),
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton("YouTube Channel", url="https://youtube.com/@Tech_VJ"),
-        ]
-    )
-
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
