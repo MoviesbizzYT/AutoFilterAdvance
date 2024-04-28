@@ -40,7 +40,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("Hey {NAME}, This query wasn't of yours, kindly ask your query and play with that buttons please..!!", show_alert=True)
+        return await query.answer("Hey 👋 This query wasn't of yours, kindly ask your query and play with that buttons please..!!", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -124,7 +124,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("Hey {NAME}, This query wasn't of yours, kindly ask your query and play with that buttons please..!!", show_alert=True)
+        return await query.answer("Hey 👋 This query wasn't of yours, kindly ask your query and play with that buttons please..!!", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
@@ -139,7 +139,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b>📍 Movie Not available Reasons\n\n<i>1) O.T.T Or DVD Not Released\n\n2) Type Name With Year</i> \n\n3) Movie Is Not Available in the database Say In Our Other Group To Get This Movies\n\n<a href='https://t.me/Group_Linkzzzz'>Our Groups</a></b>")
+            k = await query.message.edit("<b>📍 Movie Not available Reasons\n\n<i>1) O.T.T Or DVD Not Released\n\n2) Type Name With Year</i> \n\n3) Movie Is Not Available in the database.. inform to the admin to get the movie\n\n<a href='https://t.me/moviesbizz_yt'>ADMIN</a></b>")
             await asyncio.sleep(10)
             await k.delete()
 
