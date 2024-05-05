@@ -739,7 +739,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b>I couldn't find anything in than name.\n\n<a href='https://t.me/Group_Linkzzzz'>Check in our other groups</a></b>")
+        k = await msg.reply("<b>⚠️ ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ.\n\n<a href='https://www.google.com'>ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ<a></b>")
         await asyncio.sleep(8)
         await k.delete()
         return
